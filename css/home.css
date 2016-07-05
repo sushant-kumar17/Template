@@ -418,6 +418,38 @@
 	    margin-top: 3px;
 	}
 
+	/*=== For the Login and Signup Page ===*/
+
+	.user-login {
+		text-align: left;
+	    max-width: 400px;
+	    width: 90%;
+	    font-family: 'Lato','Helvetica','sans-serif';
+	}
+	.user-login .form-title {
+		color:#888;
+		text-align: center;
+	}
+	.login-form {
+		padding: 30px 40px;
+    	margin-top: 20px;
+    	border: 1px solid #e6e6e6;
+    	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);	
+	}
+	.login-form label {
+		font-weight: 500;
+	    color: #888;
+	    margin-top:1em;
+	}
+	.login-form input {
+		margin:0;
+	}
+	.login-form button.btn-submit {
+		position: relative;
+		bottom: 0;
+		margin: 1em 0 0;
+	}
+
 	@media (max-width: 460px) {
 		.header {
 			padding: 5px 0;
