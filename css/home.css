@@ -221,6 +221,10 @@
 	    margin-bottom: 0;
 	    background: #fff;
 	}
+	.logo {
+		height:40px;
+		padding-top:10px;
+	}
 	.search-box {
 		padding-top:10px;
 		margin-left: 10px;
