@@ -7,7 +7,7 @@
     <meta name="description" content="Online bootcamp to start your software career full time or partime ">
     <meta name="author" content="">
 
-    <title>Dropmark</title>
+    <title>Putboard</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
     <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
@@ -16,7 +16,6 @@
 		
 	</style>
 </head>
-
 <body>
 <div class="fixed-button">
 	<a href="#" data-toggle="modal" data-target="#addLink"> + </a>
@@ -43,13 +42,35 @@
     </div>
   </div>
 </div>
+<!-- Share Board Modal -->
+<div class="modal fade" id="shareBoard" tabindex="-1" role="dialog" aria-labelledby="shareBoardLabel">
+  <div class="modal-dialog add-link-dialog" role="document">
+    <div class="modal-content add-link-content">
+      <div class="modal-body">
+        <h4 class="modal-title"> Share your board </h4>
+        <a class="close-modal" data-dismiss="modal" aria-label="Close">
+    		<span aria-hidden="true"><i class="fa fa-times"></i></span>
+    	</a>
+        <form action="" class="form-add-link">
+        	<input type="text" placeholder="Board Name" class="form-input" value="https://www.sushantkr.com/myjackielabs">
+        </form>
+        <div class="mar-t-20 text-center">
+        	<div class="sep-share"> or </div>
+	        <a href="http://fb.me/sharer.php" class="mar-r-10 share-icons" target="_blank"><i class="fa fa-facebook"></i></a>
+	        <a href="http://twitter.com" class="mar-r-10 share-icons" target="_blank"><i class="fa fa-twitter"></i></a>
+	        <a href="http://twitter.com" class="share-icons" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Add Link Modal -->
 <div class="modal fade" id="addLink" tabindex="-1" role="dialog" aria-labelledby="addLinkLabel">
   <div class="modal-dialog add-link-dialog" role="document">
     <div class="modal-content add-link-content">
       <div class="modal-body">
-        <h4 class="modal-title"> Save an item to Droplet </h4>
+        <h4 class="modal-title"> Save an item to Putboard </h4>
         <a class="close-modal" data-dismiss="modal" aria-label="Close">
     		<span aria-hidden="true"><i class="fa fa-times"></i></span>
     	</a>
@@ -119,24 +140,34 @@
 		 </div>
 	     <div class="main-container mar-t-60">
 	    	<div class="head-title">
+	    		<div class="col-md-9 col-sm-12">
 		    		<h1 class="section-title"> My Collections 
 		    		<button class="btn btn-primary inl-blk btn-tags" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
 						  Tags  <i class="fa fa-caret-down" aria-hidden="true"></i>
 						</button>
 		    		</h1>
 		    		<h4 class="secondary-title"> All the links related to the startups products and service </h4>
-		    		<div class="seperator-line"></div>
-						<div class="collapse" id="collapseExample">
-						  <div class="section-tags">
-						   	<ul class="tags">
-							   	<li><a href="#"> All </a> </li>
-							   	<li><a href="#"> Startups </a></li>
-							   	<li><a href="#"> Tech Blogs </a></li>
-							   	<li><a href="#"> Read Later </a></li>
-						   	</ul>
-						  </div>
-						</div>
+					<div class="collapse" id="collapseExample">
+					  <div class="section-tags">
+					   	<ul class="tags">
+						   	<li><a href="#"> All </a> </li>
+						   	<li><a href="#"> Startups </a></li>
+						   	<li><a href="#"> Tech Blogs </a></li>
+						   	<li><a href="#"> Read Later </a></li>
+					   	</ul>
+					  </div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-12 mar-t-20">
+					<button class="btn btn-lg btn-actions mar-r-10" data-toggle="modal" data-target="#createBoard">
+						<i class="fa fa-pencil mar-r-5"></i> Edit 
+					</button>
+					<button class="btn btn-lg btn-actions" data-toggle="modal" data-target="#shareBoard">
+						<i class="fa fa-share-alt mar-r-5"></i> Share 
+					</button>
+				</div>
 		    	<div class="clearfix"></div>
+		    	<div class="seperator-line"></div>
 	    	</div>
 
 	    	<div class="collections-list">
@@ -149,7 +180,7 @@
 			    					<img src="img/stache.png">
 			    				</div>
 			    				<div class="details">
-			    					<div class="link-title">
+			    					<div class="link-title" alt="Stache is the new way to share the bookmark">
 			    						<!--- Title of the link -->
 			    						Stache - A nice way to curate and share the links
 			    					</div>
