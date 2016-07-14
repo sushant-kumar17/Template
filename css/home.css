@@ -47,6 +47,17 @@
 	    padding: 10px 10px;
 	    font-size: 1em;
 	}
+	.nav>li.btn-signup > a {
+		background: #ff5454;
+	    color: #fff;
+	    padding: 5px 20px;
+	    margin: 10px;
+	    border-radius: 2px;
+	}
+	.nav>li.btn-signup > a:hover {
+		background: #ff2b2b;
+	    color: #fff;
+	}
 	.bg-bluish {
 		background: #f9fbff;
 	}
@@ -222,7 +233,7 @@
 	    background: #fff;
 	}
 	.logo {
-		height:40px;
+		height:36px;
 		padding-top:10px;
 	}
 	.search-box {
@@ -619,9 +630,10 @@
 		padding:40px;
 		height:400px;
 		max-width: 750px;
+		text-align: center;
 	}
 	.feature-img img{
-		max-width: 50%;
+		margin: 0 auto;
 	}
 	.feature-content {
 		padding:50px;
@@ -701,6 +713,70 @@
 		color:#fff;
 	}
 
+/*=== About Page ====*/
+.team-card {
+	position: relative;
+    height: 300px;
+    margin: 10% auto;
+    padding: 10px 20px;
+    color: #777;
+}
+.team-card .img-container {
+    position: absolute;
+    top: -26%;
+    width: 50%;
+    left: 25%;
+    z-index: 9;
+}
+.team-card .img-container img {
+	max-width: 100%;
+}
+.team-card .info {
+	position: relative;
+	padding: 45% 30px 50px;
+    background: #fff;
+    text-align:center;
+    border: 1px solid #e6e6e6;
+    color: #444;
+    font-family: 'Lato','Helvetica','sans-serif';
+}
+.team-card .info .details {
+	padding:10%;
+}
+.team-card .info .name {
+	font-weight: bold;
+}
+.team-card .info .footer-links {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	padding: 8px;
+	background: #444;
+}
+
+/*=== Home page testimonials ===*/
+.reviews .team-card {
+	padding:10px;
+}
+
+.footer-links ul.profile-links {
+	margin-bottom: 0;
+}
+
+.footer-links ul.profile-links li a {
+	color: #fff;
+}
+
+
+@media (max-width: 900px) {
+	.team-card {
+		width:70%;
+		margin:15% auto 30%;
+		float:none;
+	}
+}
 @media (max-width: 600px) {
 	.feature-content, .feature-img {
 	    padding: 30px;
@@ -711,53 +787,47 @@
 	.feature-content .details {
 		padding-left:0;
 	}
+
+	.team-card {
+		width:80%;
+		margin:30% auto 10%;
+	}
 }
 
 @media (max-width: 460px) {
-	.feature-content, .feature-img { 
-		height: auto;
+.feature-content, .feature-img { 
+	height: auto;
+}
+
+/*=== Links page ===*/
+	.header {
+		padding: 5px 0;
+	}
+	.search-box .input-search {
+	    padding: 5px 10px;
+	}
+	.main-container {
+		   padding: 15px 10px;
+	}
+	.search-box .icon-search {
+	    position: absolute;
+	    top: 17px;
+	    left: auto;
+	    right: 0px;
+	}
+	.show-nav .main-container{
+		width: 100%;
 	}
 
-	/*=== Links page ===*/
-		.header {
-			padding: 5px 0;
-		}
-		.search-box .input-search {
-		    padding: 5px 10px;
-		}
-		.main-container {
- 		   padding: 15px 10px;
-		}
-		.search-box .icon-search {
-		    position: absolute;
-		    top: 17px;
-		    left: auto;
-		    right: 0px;
-    	}
-		.show-nav .main-container{
-			width: 100%;
-		}
-
-		.modal .add-link-dialog, .modal .add-link-content {
-		    width: 100%;
-		    margin: 10% 0;
-		}
-		.add-link-content .modal-body {
- 	 	  padding: 20px 10px;
-		}
+	.modal .add-link-dialog, .modal .add-link-content {
+	    width: 100%;
+	    margin: 10% 0;
 	}
-
-	/*.header {
-		min-height: 70px;
-    	padding: 10px 0;
+	.add-link-content .modal-body {
+	 	  padding: 20px 10px;
 	}
-	.header .navbar-nav li a {
-		font-size: 1.2em;
-	    font-weight: 600;
-	    color: #fff;
-	    padding:15px;
+	.team-card {
+		margin-top:35%;
+		width: 100%;
 	}
-	.header .navbar-nav li a:hover {
-		border-bottom: 3px solid #ff5252;
-		padding-bottom: 12px;
-	}*/
+}
